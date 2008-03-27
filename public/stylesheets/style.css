@@ -1,0 +1,26 @@
+/******NO CAMBIAR*******/
+body {min-width:800px}
+#header,#menu,#content,#sub-section,#footer {
+overflow:hidden;
+display:inline-block
+}
+/* safari and opera need this */
+#footer {width:100%}
+#header,#menu,#sub-section {float:left}
+#content {float:right}
+#header {width:49%}
+/* leaving room for rounding error (MSIE) */
+#menu {width:50.9%}
+#content {width:80%}
+#sub-section {width:20%}
+#footer {clear:both}
+/******DE AQUI PA'BAJO SI ALTERAR************/
+
+body{
+	background: #2f4187 url(images/bknd.gif) repeat-x;
+}
+
+#header{
+	background: #000000 url(images/logo.jpg) repeat-x;
+	
+}

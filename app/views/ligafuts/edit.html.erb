@@ -1,0 +1,12 @@
+<h1>Editing ligafut</h1>
+
+<%= error_messages_for :ligafut %>
+
+<% form_for(@ligafut) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @ligafut %> |
+<%= link_to 'Back', ligafuts_path %>

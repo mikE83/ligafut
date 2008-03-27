@@ -1,5 +1,5 @@
 /******NO CAMBIAR*******/
-body {min-width:800px}
+body {min-width:900px}
 #header,#menu,#content,#sub-section,#footer {
 overflow:hidden;
 display:inline-block
@@ -8,19 +8,57 @@ display:inline-block
 #footer {width:100%}
 #header,#menu,#sub-section {float:left}
 #content {float:right}
-#header {width:49%}
+#header {width:29%}
 /* leaving room for rounding error (MSIE) */
-#menu {width:50.9%}
+#menu {width:70.9%}
 #content {width:80%}
 #sub-section {width:20%}
 #footer {clear:both}
 /******DE AQUI PA'BAJO SI ALTERAR************/
-
-body{
+body{	
+	margin: 0 auto;
 	background: #2f4187 url(images/bknd.gif) repeat-x;
 }
 
 #header{
-	background: #000000 url(images/logo.jpg) repeat-x;
-	
+
+	text-align: center;
+	height: 143px;
+	background: url(images/logo.jpg) no-repeat center;
+}
+
+#menu{
+	padding-top: 27px;
+	height: 143px;
+}
+
+#sub-section{
+
+}
+
+img{
+	border-style: none;
+}
+
+#rss_main{
+display:inline-block;
+}
+
+#rss_top{
+	background: url(images/rss_top.gif) no-repeat;
+	width: 214px;
+	height: 55px;
+	display:inline-block;
+}
+
+#rss_body{
+	background: url(images/rss_body.gif) repeat-y;
+	display:inline-block;
+}
+
+#rss_footer{
+	background: url(images/rss_foot.gif) no-repeat;
+	width: 214px;
+	height: 55px;
+	display:inline-block;
 }

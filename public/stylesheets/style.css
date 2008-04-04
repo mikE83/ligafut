@@ -17,7 +17,7 @@ display:inline-block
 /******DE AQUI PA'BAJO SI ALTERAR************/
 body{	
 	margin: 0 auto;
-	background: #2f4187 url(images/bknd.gif) repeat-x;
+	background: #363636 url(images/bknd.gif) repeat-x;
 }
 
 #header{
@@ -61,4 +61,9 @@ display:inline-block;
 	width: 214px;
 	height: 55px;
 	display:inline-block;
+}
+
+#footer{
+	background: url(images/footer.gif) repeat-x;
+	height: 78px;
 }

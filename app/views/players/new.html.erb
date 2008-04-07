@@ -1,0 +1,136 @@
+<h1>New player</h1>
+
+<%= error_messages_for :player %>
+
+<% form_for(@player) do |f| %>
+  <p>
+    <b>Team</b><br />
+    <%= f.text_field :team_id %>
+  </p>
+
+  <p>
+    <b>Surname</b><br />
+    <%= f.text_field :surname %>
+  </p>
+
+  <p>
+    <b>Firstname</b><br />
+    <%= f.text_field :firstname %>
+  </p>
+
+  <p>
+    <b>Poste</b><br />
+    <%= f.text_field :poste %>
+  </p>
+
+  <p>
+    <b>Shirt number</b><br />
+    <%= f.text_field :shirt_number %>
+  </p>
+
+  <p>
+    <b>Country</b><br />
+    <%= f.text_field :country_id %>
+  </p>
+
+  <p>
+    <b>In club since</b><br />
+    <%= f.datetime_select :in_club_since %>
+  </p>
+
+  <p>
+    <b>Date of birth</b><br />
+    <%= f.datetime_select :date_of_birth %>
+  </p>
+
+  <p>
+    <b>On loan</b><br />
+    <%= f.check_box :on_loan %>
+  </p>
+
+  <p>
+    <b>Notes</b><br />
+    <%= f.text_area :notes %>
+  </p>
+
+  <p>
+    <b>Previous club</b><br />
+    <%= f.text_field :previous_club %>
+  </p>
+
+  <p>
+    <b>Address1</b><br />
+    <%= f.text_field :address1 %>
+  </p>
+
+  <p>
+    <b>Address2</b><br />
+    <%= f.text_field :address2 %>
+  </p>
+
+  <p>
+    <b>City</b><br />
+    <%= f.text_field :city %>
+  </p>
+
+  <p>
+    <b>Post code</b><br />
+    <%= f.text_field :post_code %>
+  </p>
+
+  <p>
+    <b>Phone1</b><br />
+    <%= f.text_field :phone1 %>
+  </p>
+
+  <p>
+    <b>Phone2</b><br />
+    <%= f.text_field :phone2 %>
+  </p>
+
+  <p>
+    <b>Mobile phone</b><br />
+    <%= f.text_field :mobile_phone %>
+  </p>
+
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <b>Custom text1</b><br />
+    <%= f.text_field :custom_text1 %>
+  </p>
+
+  <p>
+    <b>Custom text2</b><br />
+    <%= f.text_field :custom_text2 %>
+  </p>
+
+  <p>
+    <b>Custom number1</b><br />
+    <%= f.text_field :custom_number1 %>
+  </p>
+
+  <p>
+    <b>Custom number2</b><br />
+    <%= f.text_field :custom_number2 %>
+  </p>
+
+  <p>
+    <b>Supplent</b><br />
+    <%= f.check_box :supplent %>
+  </p>
+
+  <p>
+    <b>Enabled</b><br />
+    <%= f.check_box :enabled %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', players_path %>

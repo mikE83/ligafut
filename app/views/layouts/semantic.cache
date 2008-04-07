@@ -1,0 +1,15 @@
+;; Object layouts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "layouts/"
+  :tables (list 
+   (semanticdb-table "ligafuts.html.erb"
+    :major-mode 'html-mode
+    :tags '(("Ligafut" section nil nil [279 424]) ("" section nil nil [424 429]))
+    :file "ligafuts.html.erb"
+    :pointmax 460
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )

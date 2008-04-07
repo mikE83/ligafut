@@ -1,0 +1,68 @@
+<h1>Listing players</h1>
+
+<table>
+  <tr>
+    <th>Team</th>
+    <th>Surname</th>
+    <th>Firstname</th>
+    <th>Poste</th>
+    <th>Shirt number</th>
+    <th>Country</th>
+    <th>In club since</th>
+    <th>Date of birth</th>
+    <th>On loan</th>
+    <th>Notes</th>
+    <th>Previous club</th>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>City</th>
+    <th>Post code</th>
+    <th>Phone1</th>
+    <th>Phone2</th>
+    <th>Mobile phone</th>
+    <th>Email</th>
+    <th>Custom text1</th>
+    <th>Custom text2</th>
+    <th>Custom number1</th>
+    <th>Custom number2</th>
+    <th>Supplent</th>
+    <th>Enabled</th>
+  </tr>
+
+<% for player in @players %>
+  <tr>
+    <td><%=h player.team_id %></td>
+    <td><%=h player.surname %></td>
+    <td><%=h player.firstname %></td>
+    <td><%=h player.poste %></td>
+    <td><%=h player.shirt_number %></td>
+    <td><%=h player.country_id %></td>
+    <td><%=h player.in_club_since %></td>
+    <td><%=h player.date_of_birth %></td>
+    <td><%=h player.on_loan %></td>
+    <td><%=h player.notes %></td>
+    <td><%=h player.previous_club %></td>
+    <td><%=h player.address1 %></td>
+    <td><%=h player.address2 %></td>
+    <td><%=h player.city %></td>
+    <td><%=h player.post_code %></td>
+    <td><%=h player.phone1 %></td>
+    <td><%=h player.phone2 %></td>
+    <td><%=h player.mobile_phone %></td>
+    <td><%=h player.email %></td>
+    <td><%=h player.custom_text1 %></td>
+    <td><%=h player.custom_text2 %></td>
+    <td><%=h player.custom_number1 %></td>
+    <td><%=h player.custom_number2 %></td>
+    <td><%=h player.supplent %></td>
+    <td><%=h player.enabled %></td>
+    <td><%= link_to 'Show', player %></td>
+    <td><%= link_to 'Edit', edit_player_path(player) %></td>
+    <td><%= link_to 'Destroy', player, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New player', new_player_path %>

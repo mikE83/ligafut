@@ -1,0 +1,59 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fullname: MyString
+  shortname: MyString
+  symbol: MyString
+  manager: MyString
+  president: MyString
+  address: MyString
+  post_code: MyString
+  city: MyString
+  fax: MyString
+  phone: MyString
+  stadium_name: MyString
+  stadium_directions: MyString
+  contact_person_name: MyString
+  contact_person_phone: MyString
+  contact_person_email: MyString
+  points_to_add: 1
+  points_to_remove: 1
+  ranking: 1
+  custom_text1: MyString
+  yearly_budget: 1
+  total_games_win: 1
+  total_games_lose: 1
+  total_games_draw: 1
+  supplent: false
+  team_logo_file: 
+  enabled: false
+  tgroup: 1
+
+two:
+  fullname: MyString
+  shortname: MyString
+  symbol: MyString
+  manager: MyString
+  president: MyString
+  address: MyString
+  post_code: MyString
+  city: MyString
+  fax: MyString
+  phone: MyString
+  stadium_name: MyString
+  stadium_directions: MyString
+  contact_person_name: MyString
+  contact_person_phone: MyString
+  contact_person_email: MyString
+  points_to_add: 1
+  points_to_remove: 1
+  ranking: 1
+  custom_text1: MyString
+  yearly_budget: 1
+  total_games_win: 1
+  total_games_lose: 1
+  total_games_draw: 1
+  supplent: false
+  team_logo_file: 
+  enabled: false
+  tgroup: 1

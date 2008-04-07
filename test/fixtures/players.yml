@@ -1,0 +1,55 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  team_id: 1
+  surname: MyString
+  firstname: MyString
+  poste: 1
+  shirt_number: 1
+  country_id: 1
+  in_club_since: 2008-04-04 15:56:41
+  date_of_birth: 2008-04-04 15:56:41
+  on_loan: false
+  notes: MyText
+  previous_club: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  post_code: MyString
+  phone1: MyString
+  phone2: MyString
+  mobile_phone: MyString
+  email: MyString
+  custom_text: MyString
+  custom_text2: MyString
+  custom_number1: 1
+  custom_number2: 1
+  supplent: false
+  enabled: false
+
+two:
+  team_id: 1
+  surname: MyString
+  firstname: MyString
+  poste: 1
+  shirt_number: 1
+  country_id: 1
+  in_club_since: 2008-04-04 15:56:41
+  date_of_birth: 2008-04-04 15:56:41
+  on_loan: false
+  notes: MyText
+  previous_club: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  post_code: MyString
+  phone1: MyString
+  phone2: MyString
+  mobile_phone: MyString
+  email: MyString
+  custom_text: MyString
+  custom_text2: MyString
+  custom_number1: 1
+  custom_number2: 1
+  supplent: false
+  enabled: false

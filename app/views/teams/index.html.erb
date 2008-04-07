@@ -1,0 +1,70 @@
+<h1>Listing teams</h1>
+
+<table>
+  <tr>
+    <th>Fullname</th>
+    <th>Shortname</th>
+    <th>Symbol</th>
+    <th>Manager</th>
+    <th>President</th>
+    <th>Address</th>
+    <th>Post code</th>
+    <th>City</th>
+    <th>Fax</th>
+    <th>Phone</th>
+    <th>Stadium name</th>
+    <th>Stadium directions</th>
+    <th>Contact person name</th>
+    <th>Contact person phone</th>
+    <th>Contact person email</th>
+    <th>Points to add</th>
+    <th>Points to remove</th>
+    <th>Ranking</th>
+    <th>Custom text1</th>
+    <th>Yearly budget</th>
+    <th>Total games win</th>
+    <th>Total games lose</th>
+    <th>Total games draw</th>
+    <th>Team logo file</th>
+    <th>Enabled</th>
+    <th>Tgroup</th>
+  </tr>
+
+<% for team in @teams %>
+  <tr>
+    <td><%=h team.fullname %></td>
+    <td><%=h team.shortname %></td>
+    <td><%=h team.symbol %></td>
+    <td><%=h team.manager %></td>
+    <td><%=h team.president %></td>
+    <td><%=h team.address %></td>
+    <td><%=h team.post_code %></td>
+    <td><%=h team.city %></td>
+    <td><%=h team.fax %></td>
+    <td><%=h team.phone %></td>
+    <td><%=h team.stadium_name %></td>
+    <td><%=h team.stadium_directions %></td>
+    <td><%=h team.contact_person_name %></td>
+    <td><%=h team.contact_person_phone %></td>
+    <td><%=h team.contact_person_email %></td>
+    <td><%=h team.points_to_add %></td>
+    <td><%=h team.points_to_remove %></td>
+    <td><%=h team.ranking %></td>
+    <td><%=h team.custom_text1 %></td>
+    <td><%=h team.yearly_budget %></td>
+    <td><%=h team.total_games_win %></td>
+    <td><%=h team.total_games_lose %></td>
+    <td><%=h team.total_games_draw %></td>
+    <td><%=h team.team_logo_file %></td>
+    <td><%=h team.enabled %></td>
+    <td><%=h team.tgroup %></td>
+    <td><%= link_to 'Show', team %></td>
+    <td><%= link_to 'Edit', edit_team_path(team) %></td>
+    <td><%= link_to 'Destroy', team, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New team', new_team_path %>

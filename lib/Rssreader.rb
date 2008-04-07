@@ -1,10 +1,7 @@
-# Methods added to this helper will be available to all templates in the application.
-
-  require 'rss/2.0'
+ require 'rss/2.0'
   require 'open-uri'
 
-module ApplicationHelper
-
+  module RssReader
 
     def parseFeed (url, length)
       feed_url = url
@@ -20,6 +17,5 @@ module ApplicationHelper
       end
       return output
     end
+
   end
-
-

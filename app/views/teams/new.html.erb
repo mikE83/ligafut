@@ -1,0 +1,141 @@
+<h1>New team</h1>
+
+<%= error_messages_for :team %>
+
+<% form_for(@team) do |f| %>
+  <p>
+    <b>Fullname</b><br />
+    <%= f.text_field :fullname %>
+  </p>
+
+  <p>
+    <b>Shortname</b><br />
+    <%= f.text_field :shortname %>
+  </p>
+
+  <p>
+    <b>Symbol</b><br />
+    <%= f.text_field :symbol %>
+  </p>
+
+  <p>
+    <b>Manager</b><br />
+    <%= f.text_field :manager %>
+  </p>
+
+  <p>
+    <b>President</b><br />
+    <%= f.text_field :president %>
+  </p>
+
+  <p>
+    <b>Address</b><br />
+    <%= f.text_field :address %>
+  </p>
+
+  <p>
+    <b>Post code</b><br />
+    <%= f.text_field :post_code %>
+  </p>
+
+  <p>
+    <b>City</b><br />
+    <%= f.text_field :city %>
+  </p>
+
+  <p>
+    <b>Fax</b><br />
+    <%= f.text_field :fax %>
+  </p>
+
+  <p>
+    <b>Phone</b><br />
+    <%= f.text_field :phone %>
+  </p>
+
+  <p>
+    <b>Stadium name</b><br />
+    <%= f.text_field :stadium_name %>
+  </p>
+
+  <p>
+    <b>Stadium directions</b><br />
+    <%= f.text_field :stadium_directions %>
+  </p>
+
+  <p>
+    <b>Contact person name</b><br />
+    <%= f.text_field :contact_person_name %>
+  </p>
+
+  <p>
+    <b>Contact person phone</b><br />
+    <%= f.text_field :contact_person_phone %>
+  </p>
+
+  <p>
+    <b>Contact person email</b><br />
+    <%= f.text_field :contact_person_email %>
+  </p>
+
+  <p>
+    <b>Points to add</b><br />
+    <%= f.text_field :points_to_add %>
+  </p>
+
+  <p>
+    <b>Points to remove</b><br />
+    <%= f.text_field :points_to_remove %>
+  </p>
+
+  <p>
+    <b>Ranking</b><br />
+    <%= f.text_field :ranking %>
+  </p>
+
+  <p>
+    <b>Custom text1</b><br />
+    <%= f.text_field :custom_text1 %>
+  </p>
+
+  <p>
+    <b>Yearly budget</b><br />
+    <%= f.text_field :yearly_budget %>
+  </p>
+
+  <p>
+    <b>Total games win</b><br />
+    <%= f.text_field :total_games_win %>
+  </p>
+
+  <p>
+    <b>Total games lose</b><br />
+    <%= f.text_field :total_games_lose %>
+  </p>
+
+  <p>
+    <b>Total games draw</b><br />
+    <%= f.text_field :total_games_draw %>
+  </p>
+
+  <p>
+    <b>Team logo file</b><br />
+    <%= f.text_field :team_logo_file %>
+  </p>
+
+  <p>
+    <b>Enabled</b><br />
+    <%= f.check_box :enabled %>
+  </p>
+
+  <p>
+    <b>Tgroup</b><br />
+    <%= f.text_field :tgroup %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', teams_path %>

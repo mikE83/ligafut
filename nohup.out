@@ -343,4 +343,21 @@ http://132.248.20.236:3000/stylesheets/style.css?1206644540 -> /stylesheets/imag
 http://132.248.20.236:3000/ligafuts -> /stylesheets/images/bknd.gif
 132.248.20.233 - - [27/Mar/2008:14:31:29 CST] "GET /stylesheets/images/bknd.gif HTTP/1.1" 200 836
 http://132.248.20.236:3000/ligafuts -> /stylesheets/images/bknd.gif
-132.248.20.233 - - [27/Mar/2008:14:33:11 CST] "GET /stylesheets/images/logo.jpg HT
+132.248.20.233 - - [27/Mar/2008:14:33:11 CST] "GET /stylesheets/images/logo.jpg HT/usr/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:13: warning: already initialized constant OPTIONS
+/usr/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:13: warning: already initialized constant OPTIONS
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require': no such file to load -- weborb/util (MissingSourceFile)
+	from /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+	from /home/juriquilla/ligafut/ligafut/vendor/plugins/weborb/lib/weborb/config/weborb_config.rb:23
+	from /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+	from /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+	 ... 26 levels...
+	from /usr/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+	from /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:32:in `gem_original_require'
+	from /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:32:in `require'
+	from script/server:3
+=> Booting WEBrick...
+=> Booting WEBrick...

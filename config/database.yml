@@ -6,14 +6,14 @@ login: &login
   encoding: UTF-8
 
 development:
-  database: tuzo
+  database: tuzos
   <<: *login
 
 test:
-  database: tuzo	
+  database: tuzos	
   <<: *login
 
 production:
-  database: tuzo
+  database: tuzos
   <<: *login
 

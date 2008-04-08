@@ -2,15 +2,27 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.xml
 
-
-  def index
+def index
     @teams = Team.find(:all)
+      respond_to do |format|
+        # format.html # index.html.erb
+        format.xml  { render :xml => @teams }
+      end
+  end
 
-    respond_to do |format|
-#     format.html # index.html.erb
-      format.xml  { render :xml => @teams }
+
+
+  def index2
+    @teams = Team.find(:all).each do |team|
+      url ="http://132.248.20.194:3000/" + team.team_logo_file
+      team.team_logo_file = url
+      respond_to do |format|
+        # format.html # index.html.erb
+        format.xml  { render :xml => @teams }
+      end
     end
   end
+
 
   # GET /teams/1
   # GET /teams/1.xml
@@ -32,6 +44,16 @@ class TeamsController < ApplicationController
       format.html # new.html.erb
       format.xml  { render :xml => @team }
     end
+  end
+
+
+  def team_player
+    @team_player= Player.find(:all, :conditions => ["team_id = ?", 1]).each do |player|
+         respond_to do |format|
+       # format.html
+        format.xml { render :xml => @team_player }
+      end
+  end
   end
 
   # GET /teams/1/edit
